@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  xdcc_downloader_web:
+    build: 
+      context: .
+      dockerfile: docker/Dockerfile
+    image: xdcc-downloader-web
+    container_name: xdcc_downloader_web
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./downloads:/downloads
+    
