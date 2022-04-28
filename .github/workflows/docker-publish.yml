@@ -21,7 +21,7 @@ env:
 
 
 jobs:
-  build:
+  build-push:
 
     runs-on: ubuntu-latest
     permissions:
@@ -70,10 +70,10 @@ jobs:
       # https://github.com/docker/build-push-action
       - name: Build and push Docker image
         id: build-and-push
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v2
         with:
           context: .
-          dockerfile: docker/Dockerfile
+          file: docker/Dockerfile
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
