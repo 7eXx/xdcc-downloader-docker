@@ -9,4 +9,6 @@ services:
     container_name: xdcc_downloader_web
     ports:
       - "8888:8888"
+    volumes:
+      - ./downloads:/downloads
     

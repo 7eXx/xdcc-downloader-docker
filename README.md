@@ -12,3 +12,6 @@ OR
 ```
 $ docker-compose up -d --build
 ```
+
+It will map the **/download** folder to the **/downloads** container folder.  
+So edit the XdccDownload Settings throw the interface to download the file in that folder.
