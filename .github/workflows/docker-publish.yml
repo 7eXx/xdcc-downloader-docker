@@ -69,8 +69,10 @@ jobs:
 
       - name: Showing metadata information
         run: | 
-          echo "Tags - ${{ steps.meta.outputs.tags }}"
-          echo "Labels - ${{ steps.meta.outputs.labels }}"
+          echo "Tags: "
+          echo "${{ steps.meta.outputs.tags }}"
+          echo "Labels - "
+          echo "${{ steps.meta.outputs.labels }}"
           
       # Build and push Docker image with Buildx (don't push on PR)
       # https://github.com/docker/build-push-action
