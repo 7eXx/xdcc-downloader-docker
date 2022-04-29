@@ -1,7 +1,8 @@
 # Xdcc Downloader Docker
-This project aim to create a docker image containing all xdcc dependencies and funcionalities.
+This project aim to create a docker image containing all xdcc dependencies and funcionalities.  
+The image expose port 8888 as web access port.  
 
-The image expose port 8888 as web access port.
+![alt name](https://i.imgur.com/zjwTn7M.png "screnshot")
 
 ## Docker compose
 Use the **docker-compose** file to build and run the container in once.
